@@ -1,0 +1,10 @@
+local:
+  css:
+    base:
+      assets/spectre/spectre.css: {}
+      assets/spectre/spectre-exp.css: {}
+      assets/spectre/spectre-icons.css: {}
+      css/style1.css: {}
+  js:
+    js/script1.js: {}
+    js/wavesurfer.js: {}

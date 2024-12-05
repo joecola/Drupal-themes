@@ -1,0 +1,26 @@
+name: ICOM Spectre CSS local subtheme
+type: theme
+description: 'Built to use Spectre CSS. A Lightweight, Responsive and Modern CSS Framework'
+package: Core
+core_version_requirement: ^9 || ^10
+
+base theme: spectre
+
+regions:
+  verytop: Very Top
+  header: Header
+  navbar: Navbar menu
+  highlighted: Highlighted
+  content: Content
+  footer: Footer
+
+libraries-override:
+  spectre/spectre: false
+
+libraries:
+  - spectre_icom/local
+
+# Information added by Drupal.org packaging script on 2023-04-18
+version: '2.0.0'
+project: 'spectre'
+datestamp: 1681852106
