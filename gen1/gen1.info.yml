@@ -1,0 +1,23 @@
+name: gen1
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - gen1/base
+  - gen1/messages
+  - core/normalize
+  - gen1/global
+libraries-extend:
+  user/drupal.user:
+    - gen1/user
+  core/drupal.dropbutton:
+    - gen1/dropbutton
+  core/drupal.dialog:
+    - gen1/dialog
+  file/drupal.file:
+    - gen1/file
+  core/drupal.progress:
+    - gen1/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.2'
