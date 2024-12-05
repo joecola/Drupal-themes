@@ -1,0 +1,28 @@
+framework:
+  css:
+    theme:
+      css/style.css: {}
+
+overrides:
+  version: 1.x
+  css:
+    theme:
+      fonts/socialicious/css/socialicious.css: {}
+      fonts/justvector-icons/stylesheets/justVector.css: {}
+      css/style1.css: {}
+  js:
+      js/script1.js: {}
+      js/jquery-toggles/toggles.js: {}
+  dependencies:
+    - core/jquery
+
+
+jquery-custom:
+  remote: https://github.com/jquery/jquery
+  version: "2.2.4"
+  license:
+    name: MIT
+    url: https://github.com/jquery/jquery/blob/2.2.4/LICENSE.txt
+    gpl-compatible: true
+  js:
+    js/jquery-2.2.4.min.js: { minified: true, weight: -20 }

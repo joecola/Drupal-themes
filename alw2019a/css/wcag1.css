@@ -1,0 +1,82 @@
+.navbar-default .navbar-nav>li>a {}
+
+.navbar {
+
+  background-color: #8b001f;
+  /*background: url(../img/Banner/HeaderBanner.jpg);*/
+  /*background-image: none;*/
+
+}
+
+.region-navigation-collapsible {
+  background: #8b001f;
+
+}
+
+.menu--main {
+  /*background: #8b001f;*/
+}
+
+#block-alw2019a-main-menu{
+
+}
+
+#block-alw2019a-main-menu h2{
+  color: #800000 !important;
+}
+
+.region-content h1 {
+ 
+  color: #800000;
+
+}
+
+
+#block-reunionbuttons a.rev {
+    text-decoration: none;
+    color: #800000;
+    text-align: center;
+    background-color: #800000;
+    background: url(https://alumniweekend.uchicago.edu/themes/alw2019a/img/corner1tm.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+
+
+#block-reunionbuttons a.rev:hover {
+    color: #f7a21a;
+    background-color: #800000;
+}
+
+
+h2.pgoal1{
+    font-size: 24px;
+}
+
+
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active:focus {
+  color: #800000;
+  background-color: #f7a11a;
+  border: none;
+}
+
+
+
+.btn-default:hover {
+  color: #800000;
+  background-color: #f7a11a;
+  border-color: transparent;
+  border: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

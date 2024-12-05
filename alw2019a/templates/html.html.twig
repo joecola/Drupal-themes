@@ -1,0 +1,285 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the basic html structure of a single
+ * Drupal page.
+ *
+ * Variables:
+ * - $css: An array of CSS files for the current page.
+ * - $language: (object) The language the site is being displayed in.
+ *   $language->language contains its textual representation.
+ *   $language->dir contains the language direction. It will either be 'ltr' or
+ *   'rtl'.
+ * - $rdf_namespaces: All the RDF namespace prefixes used in the HTML document.
+ * - $grddl_profile: A GRDDL profile allowing agents to extract the RDF data.
+ * - $head_title: A modified version of the page title, for use in the TITLE
+ *   tag.
+ * - $head_title_array: (array) An associative array containing the string parts
+ *   that were used to generate the $head_title variable, already prepared to be
+ *   output as TITLE tag. The key/value pairs may contain one or more of the
+ *   following, depending on conditions:
+ *   - title: The title of the current page, if any.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site, if any, and if there is no title.
+ * - $head: Markup for the HEAD section (including meta tags, keyword tags, and
+ *   so on).
+ * - $styles: Style tags necessary to import all CSS files for the page.
+ * - $scripts: Script tags necessary to load the JavaScript files and settings
+ *   for the page.
+ * - $page_top: Initial markup from any modules that have altered the
+ *   page. This variable should always be output first, before all other dynamic
+ *   content.
+ * - $page: The rendered page content.
+ * - $page_bottom: Final closing markup from any modules that have altered the
+ *   page. This variable should always be output last, after all other dynamic
+ *   content.
+ * - $classes String of classes that can be used to style contextually through
+ *   CSS.
+ *
+ * @ingroup templates
+ *
+ * @see bootstrap_preprocess_html()
+ * @see template_preprocess()
+ * @see template_preprocess_html()
+ * @see template_process()
+ */
+#}
+{%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+    theme.settings.navbar_position ? 'navbar-is-' ~ theme.settings.navbar_position,
+    theme.has_glyphicons ? 'has-glyphicons',
+  ]
+%}
+<!DOCTYPE html>
+<html {{ html_attributes }}>
+  <head>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XC7PFS10XQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XC7PFS10XQ');
+</script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95K33B0DS7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95K33B0DS7');
+</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56658849-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-56658849-1');
+</script>
+
+    <head-placeholder token="{{ placeholder_token|raw }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
+        <link rel="stylesheet" href="//identity.uchicago.edu/c/fonts/proximanova.css">
+          <link rel="stylesheet" href="/themes/alw2019a/css/fonts1.css">
+      <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">-->
+
+      <script src="https://kit.fontawesome.com/54eadb3262.js" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.optimizely.com/js/214036693.js"></script>
+      <!-- Facebook Pixel Code -->
+      <script>
+        ! function(f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function() {
+            n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '150063445704240');
+        fbq('track', 'PageView');
+      </script>
+      <!--
+      <noscript>
+        <img  alt="" height="1" width="1" src="https://www.facebook.com/tr?id=150063445704240&ev=PageView&noscript=1" />
+      </noscript>
+      -->
+      <!-- End Facebook Pixel Code -->
+      <!-- Twitter universal website tag code -->
+      <script>
+        ! function(e, t, n, s, u, a) {
+          e.twq || (s = e.twq = function() {
+              s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+            a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init', 'nw7jq');
+        twq('track', 'PageView');
+      </script>
+      <!-- End Twitter universal website tag code -->
+      <script type="text/javascript">
+        (function() {
+          var didInit = false;
+
+          function initMunchkin() {
+            if (didInit === false) {
+              didInit = true;
+              Munchkin.init('250-CQH-936');
+            }
+          }
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//munchkin.marketo.net/munchkin.js';
+          s.onreadystatechange = function() {
+            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+              initMunchkin();
+            }
+          };
+          s.onload = initMunchkin;
+          document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+      </script>
+
+<!-- Reddit Pixel --><script>!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_pcvz2');rdt('track', 'PageVisit');</script><!-- DO NOT MODIFY --><!-- End Reddit Pixel -->
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//alumnidev.uchicago.edu/matomo1/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+  <body{{ attributes.addClass(body_classes) }}>
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
+
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+          <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+          <script>
+            window.addEventListener("load", function() {
+              window.cookieconsent.initialise({
+                "palette": {
+                  "popup": {
+                    "background": "#eeeeee",
+                    "text": "#000000"
+                  },
+                  "button": {
+                    "background": "#800000",
+                    "text": "#ffffff"
+                  }
+                },
+                "content": {
+                  "message": "We use cookies to ensure that we give you the best experience on our website.",
+                  "dismiss": "ACCEPT",
+                  "link": "Learn More",
+                  "href": "http://ard.uchicago.edu/privacy-policy/"
+                }
+              })
+            });
+          </script>
+
+
+
+            <script type="text/javascript">
+              (function() {
+                window._pa = window._pa || {};
+                // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+                // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+                // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+
+                var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+                pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/5bc0b93d7d7b73699b000050.js";
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+              })();
+            </script>
+
+
+
+
+
+<script type="text/javascript">
+  var _ss = _ss || [];
+  _ss.push([
+    "_setDomain",
+    "https://koi-3QNQS7IRS0.marketingautomation.services/net",
+  ]);
+  _ss.push(["_setAccount", "KOI-4H8QLZM6QQ"]);
+  _ss.push(["_trackPageView"]);
+  window._pa = window._pa || {};
+  // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+  // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+  // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+  (function () {
+    var ss = document.createElement("script");
+    ss.type = "text/javascript";
+    ss.async = true;
+    ss.src =
+      ("https:" == document.location.protocol ? "https://" : "http://") +
+      "koi-3QNQS7IRS0.marketingautomation.services/client/ss.js?ver=2.4.0";
+    var scr = document.getElementsByTagName("script")[0];
+    scr.parentNode.insertBefore(ss, scr);
+  })();
+</script>
+
+
+           
+<script src="/themes/alw2019a/js/events1.js"></script>
+
+  <script type="text/javascript" src="https://alumniweekend.uchicago.edu/themes/alw2019a/js/jquery.plugin.js">
+  </script>
+  <script type="text/javascript" src="https://alumniweekend.uchicago.edu/themes/alw2019a/js/jquery.countdown.js">
+  </script>
+  <script>
+
+(function ($) {
+  $(document).ready(function () {
+        console.log('countdown');
+        $('#cd1').countdown({until: new Date(2021, 6-1, 4), timezone: -5, format: 'd', labels: ['', '', '', '', '', '', '']});
+      });
+}(jQuery));
+
+  </script>
+  </body>
+</html>

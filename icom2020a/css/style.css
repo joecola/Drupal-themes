@@ -1,0 +1,1901 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+  background: #060606;
+  background-color: #060606;
+  background-image: url('icomsquid-bg5.png');
+  background-size: 20%;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.main-container {
+  /*background: #000;*/
+}
+
+.content ul {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feed-icons {
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.field--name-field-tags {
+  background: #220022;
+}
+
+.view-icom-news .views-row {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px #ff00ff solid;
+}
+
+body.navbar-is-fixed-top {
+  margin-top: 160px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #000;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #000;
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent;
+  border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ff00ff;
+}
+
+.view-empty {
+  text-align: center;
+}
+
+.addtoany_list {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+.path-news .addtoany_list::before {
+  content: 'share this chefnews: '
+}
+
+
+.page-node-type-upload .addtoany_list::before {
+  content: 'share this remix: '
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+body{
+  background: #060606;
+  background-color: #060606;
+  background-image: url('icomsquid-bg3.jpg');
+}
+}
+
+@media (prefers-color-scheme: light) {
+  body{
+    background: #060606;
+    background-color: #060606;
+    background-image: url('icomsquid-bg3.jpg');
+  }
+}
+*/
+
+a {
+  color: #ff00ff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #ff00ff;
+  text-decoration: none;
+}
+
+div,
+p,
+li,
+ul,
+ol {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: normal !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: normal !important;
+
+}
+
+h1,
+.h1 {
+  font-size: 2em;
+
+}
+
+h2,
+.h2 {
+  font-size: 1.5em;
+}
+
+h2.block-title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3,
+.h3 {
+  font-size: 1.666em;
+}
+
+h4,
+.h4 {
+  font-size: 1.333em;
+}
+
+
+h5,
+.h5 {
+  font-size: 1em;
+}
+
+
+
+.navbar-header .logo {
+  display: none;
+}
+
+.maintenance-page h1 {
+  text-align: center;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  /*border-bottom: 1px solid #ff00ff;*/
+  border-bottom: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+  /*font-family: 'Press Start 2P', cursive;*/
+}
+
+
+
+.navbar-default .navbar-brand {
+  font-size: 1em;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: normal;
+  text-transform: none;
+}
+
+
+.view-icom-roster-1 .views-row,
+.view-icom-latest-uploads .views-row {
+  float: left;
+  background: #ff00ff;
+  padding: 5px;
+  margin: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+.view-icom-roster-1 .views-row a,
+.view-icom-latest-uploads .views-row a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  background: #dd00dd;
+
+}
+
+.view-icom-latest-uploads .views-row a:hover {
+  background: #ff00ff;
+}
+
+.view-icom-roster-1 .views-row img,
+.view-icom-latest-uploads .views-row img {
+  background: #000;
+
+}
+
+
+.img-responsive {
+  background: #000;
+}
+
+.view-icom-roster-1 .field-content {
+  font-weight: normal;
+}
+
+.view-icom-roster-1 .views-row .views-field-name a {
+  font-weight: bold;
+}
+
+.view-icom-roster-1 .views-row .views-field-name {
+
+  padding-bottom: 5px;
+}
+
+.view-icom-roster-1 .view-content,
+.view-icom-latest-uploads .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-icom-roster-1 .views-row {
+  font-size: .666em;
+  flex: 15%
+}
+
+@media screen and (max-width: 1170px) {
+  .view-icom-roster-1 .view-content {
+    flex: 32%
+  }
+
+  .view-icom-roster-1 .views-row {
+    /*flex-direction: column;*/
+    flex: 30%;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .view-icom-roster-1 .view-content {
+    flex: 32%
+  }
+
+  .view-icom-roster-1 .views-row {
+    /*flex-direction: column;*/
+    flex: 30%;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .view-icom-roster-1 .views-row {
+    /*flex-direction: column;*/
+    flex: 44%
+  }
+}
+
+.view-icom-roster-1 .views-row img {
+  width: 100%;
+}
+
+
+
+.view-icom-latest-uploads .views-row {
+  flex: 32%
+}
+
+@media screen and (max-width: 992px) {
+
+  .view-icom-latest-uploads .view-content {
+    flex: 49%
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .view-icom-latest-uploads .views-row {
+    /*flex-direction: column;*/
+    flex: 66%
+  }
+}
+
+
+
+.view-icom-latest-uploads .views-row .views-field-field-source-img {
+
+  width: 59.98%;
+  float: left;
+  padding-right: 2.5px;
+  padding-bottom: 2.5px;
+}
+
+
+
+
+.view-icom-latest-uploads .views-row .views-field-field-source-img img {
+  width: 100%;
+
+}
+
+.view-icom-latest-uploads .views-row .views-field-user-picture {
+  width: 40.02%;
+  float: left;
+  padding-left: 2.5px;
+  padding-bottom: 2.5px;
+}
+
+.view-icom-latest-uploads .views-row .views-field-user-picture img {
+  width: 100%;
+  float: left;
+
+}
+
+
+.view-icom-latest-uploads .views-row .views-field-user-picture {
+  float: right;
+}
+
+.view-icom-latest-uploads .views-field-title,
+.view-icom-latest-uploads .views-field-uid,
+.view-icom-latest-uploads .views-field-field-e,
+.views-field-field-upload-mp3 {
+
+
+  clear: both;
+
+}
+
+.views-field-field-upload-mp3,
+.views-field-field-upload-mp3 .field-content,
+.file--mime-audio-mpeg {
+  width: 100%;
+}
+
+
+.view-icom-latest-uploads .views-row a {}
+
+.view-icom-latest-uploads .views-row span {
+
+  font-weight: normal;
+}
+
+
+
+.views-label-field-e span,
+.field-content {
+  display: inline;
+}
+
+.view-icom-latest-uploads .views-field-title a,
+.view-icom-latest-uploads .views-row .views-field-title-1 a {}
+
+.view-icom-latest-uploads .views-field-field-blurb {
+
+  font-weight: normal;
+}
+
+.view-icom-latest-uploads span {
+
+  font-weight: normal;
+}
+
+.views-field-field-source-img .field-content,
+.views-field-user-picture .field-content {
+  width: 100%;
+
+}
+
+.field--name-user-picture img {
+  margin: 0 auto;
+}
+
+.path-user .field--name-field-bio,
+.path-user .field--name-field-website {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.view-display-id-block_chef_pages {
+  padding-top: 30px;
+}
+
+.view-display-id-block_chef_pages h5 {
+  font-size: 1.5em;
+}
+
+a {
+  /*text-decoration: underline !important;*/
+  text-transform: uppercase;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+
+}
+
+a:hover {
+  text-decoration: none !important;
+  background: #000;
+  color: #fff !important;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+
+
+.main-container {
+  padding-bottom: 444px;
+
+}
+
+#player1 {
+  background: #003300;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 9999;
+
+
+  border-top: 1px solid #00ff00;
+
+
+
+}
+
+#waveform {
+  width: 100%;
+  height: 66px;
+
+}
+
+
+#loading_flag {
+  text-align: center;
+  width: 100%;
+}
+
+#playpause {
+
+  font-size: 2em;
+  line-height: 1.666em;
+  color: #00ff00;
+  font-weight: normal;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  height: 55px;
+  padding-bottom: 15px;
+}
+
+
+.upload div {
+  color: #fff;
+
+}
+
+.upload .field {
+  padding: 15px;
+}
+
+.upload a {
+  color: #ff00ff;
+}
+
+.upload .field--name-user-picture {
+  float: left;
+  color: #fff;
+}
+
+.upload .field--name-field-e .field--label {
+  float: left;
+  padding-right: 5px;
+  color: #fff;
+}
+
+.upload .field--name-field-description {
+  background: #440044;
+
+  color: #fff;
+}
+
+
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  /*height: 64px;*/
+  padding: 5px;
+
+  color: #fff;
+  background-color: #440044;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.region-content .field {
+  padding: 5px;
+}
+
+
+
+#edit-field-e-wrapper {
+  display: none;
+}
+
+.view-icom-upload-info img {
+  width: 100%;
+
+}
+
+.archive1 {
+  word-break: break-word;
+}
+
+
+
+.region-content .tabs,
+.user-login-form {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 333px;
+}
+
+.region-content .tabs ul li {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.region-content .nav>li>a {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+}
+
+.view-icom-upload-info .views-field-title {
+  color: #fff;
+  /*font-size: 36px;*/
+}
+
+.block-views-blockicom-upload-info-block-1 h2.block-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2em;
+  padding-bottom: 22px;
+  color: #00ff00;
+
+}
+
+.block-views-blockicom-upload-info-block-1 {
+  max-width: 555px;
+  margin: 0 auto;
+  font-size: .666em;
+  line-height: 1.5em;
+  padding-bottom: 33px;
+}
+
+h3.popover-title {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.btn {
+
+
+  padding: 22px;
+
+}
+
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 2px solid #ff00ff;
+  padding: 11px;
+
+
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button {
+  font-size: 1.5em;
+}
+
+.btn-success:active:hover,
+.btn-success.active:hover,
+.open>.dropdown-toggle.btn-success:hover,
+.btn-success:active:focus,
+.btn-success.active:focus,
+.open>.dropdown-toggle.btn-success:focus,
+.btn-success:active.focus,
+.btn-success.active.focus,
+.open>.dropdown-toggle.btn-success.focus {
+  color: #fff;
+  background-color: #ff00ff;
+  ;
+  border-color: transparent;
+  border: none;
+  border: 2px solid #ff00ff;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+  color: #fff;
+  background-color: #ff00ff;
+  ;
+  border-color: transparent;
+  border: none;
+  border: 2px solid #ff00ff;
+}
+
+.btn-success:active,
+.btn-success.active,
+.open>.dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #000;
+  background-image: none;
+  border-color: #ff00ff;
+}
+
+.btn-success:hover {
+  color: #ffffff;
+  background-color: #000;
+  border-color: #ff00ff;
+  border: 2px solid #ff00ff;
+}
+
+.btn-default:hover {
+  color: #ffffff;
+  background-color: #000;
+  border-color: #ff00ff;
+  border: 2px solid #ff00ff;
+}
+
+.btn-default {
+  color: #ffffff;
+  background-color: #000;
+  border-color: #ff00ff;
+  border: 2px solid #ff00ff;
+}
+
+
+.form-actions .btn,
+.form-actions .btn-group {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 550px;
+}
+
+
+.file>span {
+  background: #000;
+  color: #00ff00;
+  border-bottom: none;
+  border-top: none;
+  border: none;
+
+}
+
+.file .file-icon {
+  display: none;
+}
+
+
+.btn-danger {
+  border: none;
+}
+
+.file .text-primary,
+.file .text-primary:hover {
+  color: #00ff00;
+}
+
+
+.field--name-field-upload-mp3 .description.help-block{
+  display:none;
+}
+
+#edit-field-upload-mp3-0--description,
+#edit-field-description-0-format {
+  display: none;
+}
+
+.help-block.description,
+.form-item-field-creativecommons-value label {
+
+  color: #888;
+}
+
+form a {
+  color: #ff00ff;
+}
+
+form label {
+
+  font-weight: normal;
+  color: #fff;
+}
+
+
+
+.field--name-field-description .description.help-block_ {
+  display: none;
+}
+
+
+#playinfo {
+
+  min-height: 30px;
+  color: #00ff00;
+  text-align: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*
+ .view-icom-latest-uploads .views-field-field-upload-mp3 a{
+   font-family: 'Press Start 2P', cursive;
+   text-decoration:none !important;
+   font-size:16px;
+   font-weight:normal;
+   width:100%;
+ padding:5px;
+ }
+ */
+
+
+
+
+/*
+ .view-icom-latest-uploads .views-field-field-upload-mp3{
+   
+   text-align:right;
+     
+ }
+ */
+
+
+._view-icom-latest-uploads .views-field-field-upload-mp3 {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+/*
+ #block-views-block-icom-latest-uploads-block-5
+ */
+#_block-views-block-icom-latest-uploads-block-5 .views-field-field-source-mp3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.views-row {
+  position: relative;
+}
+
+/*
+ block-views-block-icom-latest-uploads-block-3
+ */
+#block-views-block-icom-latest-uploads-block-homepage .view-icom-latest-uploads .views-field-field-upload-mp3 a,
+#block-views-block-icom-latest-uploads-block-3 .view-icom-latest-uploads .views-field-field-upload-mp3 a,
+#block-views-block-icom-latest-uploads-block-chef-pages .views-field-field-upload-mp3 a,
+#block-views-block-icom-latest-uploads-block-5 .views-field-field-source-mp3 a,
+#block-views-block-icom-latest-uploads-block-1 .views-field-field-upload-mp3 a,
+#block-views-block-icom-latest-uploads-block-ingredients-pages .views-field-field-upload-mp3 a,
+#block-views-block-icom-latest-uploads-block-6 .views-field-field-source-mp3 a,
+#block-views-block-icom-latest-uploads-block-4 .views-field-field-source-mp3 a,
+#block-views-block-icom-latest-uploads-block-2 .views-field-field-upload-mp3 a
+
+
+
+{
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none !important;
+  font-weight: normal;
+  font-size: 2em;
+  padding: 5px;
+  color: #00ff00;
+  background: #ff00ff;
+  /*opacity: 0.5;*/
+  text-transform: lowercase;
+}
+
+
+
+#block-views-block-icom-latest-uploads-block-homepage .view-icom-latest-uploads .views-field-field-upload-mp3 a:hover {
+  opacity: 1;
+}
+
+
+
+
+#_block-views-block-icom-latest-uploads-block-homepage .view-icom-latest-uploads .views-field-field-source-mp3 a,
+#_block-views-block-icom-latest-uploads-block-5 .views-field-field-source-mp3 a,
+#_block-views-block-icom-latest-uploads-block-1 .views-field-field-upload-mp3 a {
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none !important;
+  font-size: 24px;
+  font-weight: normal;
+
+  padding: 10px;
+  color: #fff;
+  background: #ff00ff;
+  opacity: 0.5;
+}
+
+#edit-field-upload-mp3-0-upload {
+  height: 66px;
+}
+
+
+.form-item-field-upload-mp3-0 .form-file {
+  height: 66px;
+}
+
+#block-views-block-icom-latest-uploads-block-homepage .view-icom-latest-uploads .views-field-field-source-mp3 a:hover,
+#block-views-block-icom-latest-uploads-block-5 .views-field-field-source-mp3 a:hover,
+#block-views-block-icom-latest-uploads-block-3 .views-field-field-upload-mp3 a:hover {
+  opacity: 1;
+}
+
+#block-socialbuttons {
+  background: #330044;
+  color: #ff00ff;
+  text-align: center;
+  font-size: 1.333em;
+  line-height: 1.333em;
+}
+
+#block-socialbuttons a {
+  /*padding:5px;*/
+  background: transparent !important;
+}
+
+.slink1 {
+  display: inline-block;
+  font-size: .555em;
+  padding: 5px;
+  height: 1em;
+  line-height: 1em;
+}
+
+.navbar-default {
+  background-color: #060606;
+  border-color: #282828;
+  background: #ff00ff;
+  color: #000;
+  opacity: 0.9;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: #ff00ff;
+}
+
+
+#block-views-block-icom-latest-uploads-block-4 .views-field .views-field-field-source-mp3,
+#block-views-block-icom-latest-uploads-block-4 .views-field .views-field-field-source-zip {
+
+  text-align: center;
+}
+
+#block-views-block-icom-latest-uploads-block-4 .views-field .views-field-field-source-mp3 a,
+#block-views-block-icom-latest-uploads-block-4 .views-field .views-field-field-source-zip a {
+
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none !important;
+  font-weight: normal;
+  padding: 10px;
+  color: #fff;
+  background: #ff00ff;
+  opacity: 1;
+}
+
+
+.commment {
+  clear: both;
+}
+
+
+.commment {
+  display: block;
+
+  border: 0;
+
+  clear: both;
+
+}
+
+.commmentmeta {
+
+  text-align: right;
+}
+
+.field--name-field-description .field--item {
+  border: 1px solid #ff00ff;
+  padding: 5px;
+}
+
+.descr1 {
+  background-color: #880088;
+  color: #fff;
+  padding: 22px;
+  word-break: break-word;
+}
+
+.descr1 img {
+  max-width: 100%;
+}
+
+.saysn {
+  text-transform: uppercase;
+}
+
+.commment .field--name-user-picture img {
+  border: 1px solid #ff00ff;
+  width: 66px;
+  height: 66px;
+}
+
+.commmentbox,
+.commmentmeta {
+  padding-left: 77px;
+}
+
+.commment {
+  /*border-bottom:1px solid #ff00ff;*/
+  background: #660066;
+  min-height: 88px;
+  padding: 5px;
+
+  margin-top: 10px;
+}
+
+
+.commmentmeta {
+  word-break: break-word;
+  padding-left: 82px;
+  padding-right: 5px;
+}
+
+
+.field--name-comment-body {
+  word-break: break-word !important;
+  min-height: 60px;
+
+}
+
+.commment h3 {
+  margin-top: 66px;
+}
+
+
+.commmentadd,
+#comment-form {
+  padding-top: 55px;
+}
+
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-right: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.filter-wrapper {
+  display: none;
+}
+
+#edit-actions {
+  padding-bottom: 33px;
+}
+
+.page-node-type-upload .main-container {
+  padding-bottom: 222px;
+}
+
+
+.views-field-field-source-story {
+  color: #fff;
+  background: #330033;
+  margin-top: 5px;
+  padding: 10px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.views-field-field-source-story .field-content a {
+  color: #fff;
+  background: none;
+  font-weight: normal;
+
+}
+
+.page-header {
+  text-align: center;
+}
+
+.view-header h5 {
+  text-align: center;
+}
+
+.article {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.article .content img {
+  width: 100%;
+}
+
+.view-display-id-block_4,
+#block-views-block-icom-latest-uploads-block-6,
+#block-icom2020a-search-form,
+#search-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 33px;
+  
+}
+
+
+#block-views-block-icom-latest-uploads-block-6 .views-field-nothing {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  text-align: center;
+}
+
+.path-frontpage .view-display-id-block_4,
+.path-frontpage #block-views-block-icom-latest-uploads-block-6 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 33px;
+  padding-top: 33px;
+}
+
+#block-icom2020a-search-form .btn,
+#search-form .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  padding: 11px;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#block-icom2020a-search-form .btn-primary,
+#search-form .btn-primary {
+  color: #fff;
+  background-color: #440044;
+  border: none;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #000;
+  border-color: #ff00ff;
+}
+
+.btn-primary:hover {
+  color: #ff00ff;
+  background-color: #000;
+  border-color: #fff;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #ff00ff;
+  background-color: #000;
+  border-color: #fff;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+  background-image: none;
+  color: #ff00ff;
+  background-color: #000;
+  border-color: #fff;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open>.dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open>.dropdown-toggle.btn-primary.focus {
+  color: #ff00ff;
+  background-color: #000;
+  border-color: #fff;
+}
+
+#block-icom2020a-search-form .input-group,
+#search-form .input-group {
+  background-color: #440044;
+}
+
+.path-search h3,
+#search-form h3 {
+
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+}
+
+#_block-views-block-icom-latest-uploads-block-6 .views-row .views-field-field-source-mp3 a,
+#block-views-block-icom-latest-uploads-block-6 .views-row .views-field-field-source-zip a,
+#block-views-block-icom-latest-uploads-block-6 .views-field-view-node-1 a,
+#_block-views-block-icom-latest-uploads-block-4 .views-row .views-field-field-source-mp3 a,
+#block-views-block-icom-latest-uploads-block-4 .views-row .views-field-field-source-zip a,
+#block-views-block-icom-latest-uploads-block-4 .views-field-view-node-1 a {
+
+  font-weight: normal;
+  font-family: 'Press Start 2P', cursive;
+  height: 32px;
+
+  padding: 5px;
+
+}
+
+
+#block-views-block-icom-latest-uploads-block-6 .views-row .views-field-field-source-mp3,
+#block-views-block-icom-latest-uploads-block-6 .views-row .views-field-field-source-zip,
+#block-views-block-icom-latest-uploads-block-6 .views-field-view-node-1,
+#block-views-block-icom-latest-uploads-block-4 .views-row .views-field-field-source-mp3,
+#block-views-block-icom-latest-uploads-block-4 .views-row .views-field-field-source-zip,
+#block-views-block-icom-latest-uploads-block-4 .views-field-view-node-1,
+#block-views-block-icom-latest-uploads-block-5 .views-field-view-node-1 {
+  padding: 5px;
+
+  text-align: center;
+  width: 100%;
+}
+
+
+#block-views-block-icom-latest-uploads-block-5 .views-field-view-node-1 a {
+  height: 16px;
+  font-weight: normal;
+  font-family: 'Press Start 2P', cursive;
+  padding: 15px;
+
+}
+
+.event1 .content {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #ff00ff;
+}
+
+.event1 .content a:hover {
+  background: transparent;
+}
+
+.event1 .content a {
+  background: transparent;
+
+}
+
+
+.event1 .event.full,
+.upload.full .links {
+
+  padding: 15px;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+
+}
+
+.event1 .event.full a,
+.upload.full .links a {
+
+  padding: 11px;
+  /*border: 2px solid #ff00ff;*/
+}
+
+
+
+#block-views-block-icom-latest-uploads-block-ingredients-pages,
+#block-views-block-icom-latest-uploads-block-1,
+.upload1,
+#block-views-block-icom-latest-uploads-block-homepage,
+#block-views-block-icom-roster-1-block-1,
+#block-views-block-icom-latest-uploads-block-10 {
+  padding-top: 33px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.messages__wrapper {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.navbar-right>li>a {
+
+  border: 2px solid #000;
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.btn-success {
+  color: #ffffff;
+  background-color: #000;
+  border-color: #ff00ff;
+}
+
+
+.js-form-file.form-file.form-control::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#edit-comment-notify-settings.panel {
+
+  background-color: #440044;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#edit-comment-notify-settings.panel-default>.panel-heading {
+  color: #fff;
+  background-color: #440044;
+  border: none;
+}
+
+#edit-comment-notify-settings .panel-heading {
+  padding: 10px 15px;
+  border-bottom: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#edit-comment-notify-settings .select-wrapper:after {
+  color: #ff00ff;
+  content: '▼';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: -.5em;
+  padding-right: .5em;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+}
+
+
+
+#edit-comment-notify-settings .panel-default>.panel-heading {
+  color: #fff;
+  background-color: #660066;
+  border-color: #ddd;
+}
+
+#edit-comment-notify-settings {}
+
+/*
+edit-user-picture-0-upload
+user-form
+*/
+#edit-comment-notify {
+  background: #220022;
+}
+
+#edit-user-picture-0-upload {
+  height: 66px;
+}
+
+.user-form .js-form-file.form-file.form-control::before {
+  content: '[Browse for image]';
+  display: inline-block;
+  background: none;
+  border: 2px solid #ff00ff;
+  border-radius: 0;
+  padding: 15px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: none;
+  font-weight: bold;
+
+}
+
+.node-upload-form .js-form-file.form-file.form-control::before {
+  content: '[Browse for .MP3]';
+  display: inline-block;
+  background: none;
+  border: 2px solid #ff00ff;
+  border-radius: 0;
+  padding: 15px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: none;
+  font-weight: bold;
+
+}
+
+.user-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.node-upload-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.password-strength__meter {
+  height: 0.75em;
+  margin-top: 0.5em;
+  background-color: #333;
+}
+
+.password-strength__indicator {
+  width: 0;
+  height: 100%;
+  background-color: #00cc00;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+.js-form-file.form-file.form-control:hover::before {
+  /*border-color: black;*/
+
+}
+
+.js-form-file.form-file.form-control:active::before {
+  /*  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);*/
+
+}
+
+.form-actions.form-group.js-form-wrapper.form-wrapper {
+  text-align: center;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+  outline-offset: -2px;
+}
+
+.form-control:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.js-form-managed-file.form-managed-file {
+  text-align: center;
+}
+
+.views-field-field-description {
+  font-weight: normal;
+}
+
+
+
+.breadcrumb {
+  padding: 15px 15px;
+  margin-bottom: 33px;
+  margin-bottom: 33px;
+  list-style: none;
+  background-color: #220022;
+  border-radius: 0;
+  border: 1px solid #ff00ff;
+}
+
+.breadcrumb>.active {
+  color: #fff;
+}
+
+.archive1 a {
+  padding: 5px;
+  font-weight: normal;
+}
+
+.archive1 a:nth-child(even) {
+  color: #ff00ff;
+}
+
+.archive1 a:nth-child(even) {
+  color: #00ff00;
+  padding: 5px;
+
+  font-weight: normal;
+}
+
+#block-archive,
+#block-views-block-icom-latest-uploads-block-5 {
+  padding-top: 66px;
+}
+
+
+.footer {
+  margin-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+  border: none;
+}
+
+#edit-help-link {
+  display: none;
+}
+
+
+
+/* FIX LATER IN TWIG TEMPLATE */
+.path-user h1.page-header:before {
+  content: "chef:\a";
+  white-space: pre;
+}
+
+.page-node-type-event h1.page-header:before {
+  content: "ingredients:\a";
+  white-space: pre;
+}
+
+.page-node-type-upload h1.page-header:before {
+  content: "remix:\a";
+  white-space: pre;
+}
+
+
+/* SEARCH */
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+  z-index: 3;
+  color: #ffffff;
+  cursor: default;
+  background-color: #ff00ff;
+  border-color: transparent;
+}
+
+/* new play buttons */
+.view-icom-latest-uploads .views-field-field-source-mp3,
+.view-icom-latest-uploads .views-field-field-upload-mp3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.view-icom-latest-uploads .views-row {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+/* NAV STUFF */
+
+.navbar-default .navbar-toggle {
+  border-color: #282828;
+  border: none;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+  color: #ffffff;
+  cursor: default;
+  background-color: #ff00ff;
+  border: none;
+  border-bottom: 1px solid #ff00ff;
+}
+
+.nav-tabs>li>a {
+  margin-right: 2px;
+
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background-color: #220022;
+  border-bottom: 1px solid #ff00ff;
+}
+
+
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+  text-decoration: none;
+  background-color: #220022;
+  /* margin: 0;*/
+}
+
+.nav-tabs>li>a:hover {
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #ff00ff;
+  margin: 0;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+  text-decoration: none;
+  background-color: #220022;
+  /* margin: 0;*/
+  /*border-bottom: 1px solid #ff00ff;*/
+}
+
+.nav-tabs {
+  border: none;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.nav-tabs>li {
+  float: left;
+  margin-bottom: 0;
+}
+
+.alert-info {
+  color: #ffffff;
+  background-color: #cc00cc;
+  border: none;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+}
+
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px;
+}
+
+.alert-success {
+  color: #00ff00;
+  background-color: #000;
+}
+
+
+#block-views-block-icom-countdown-icomcountdown1 {
+  background: #cc00cc;
+}
+
+#block-views-block-icom-countdown-icomcountdown1 div {
+  display: inline-block;
+  font-weight: bold;
+}
+
+#block-views-block-icom-countdown-icomcountdown1 .form-group {
+  width: 100%;
+  text-align: center;
+}
+
+#block-views-block-icom-countdown-icomcountdown1 a {
+  color: #fff;
+}
+
+
+#block-views-block-icom-countdown-icomcountdown1 #countdown1 {
+  color: #00ff00;
+}
+
+.page-node-type-upload .page-header {}
+
+/*####################################################
+MOBILE LAST DESIGN BLAH BLAH
+####################################################*/
+@media (max-width: 767px) {
+
+  body.navbar-is-fixed-top {
+    margin-top: 170px;
+  }
+
+  .slink1 {
+    display: none;
+  }
+
+  h1,
+  .h1 {
+    font-size: 1.333em;
+
+  }
+
+  h2,
+  .h2 {
+    font-size: 1em;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1em;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1em;
+  }
+
+
+
+
+
+
+  #block-views-block-icom-latest-uploads-block-homepage .view-icom-latest-uploads .views-field-field-upload-mp3 a,
+  #block-views-block-icom-latest-uploads-block-3 .view-icom-latest-uploads .views-field-field-upload-mp3 a,
+  #block-views-block-icom-latest-uploads-block-chef-pages .views-field-field-upload-mp3 a,
+  #block-views-block-icom-latest-uploads-block-5 .views-field-field-source-mp3 a,
+  #block-views-block-icom-latest-uploads-block-1 .views-field-field-upload-mp3 a,
+  #block-views-block-icom-latest-uploads-block-ingredients-pages .views-field-field-upload-mp3 a,
+  #block-views-block-icom-latest-uploads-block-6 .views-field-field-source-mp3 a,
+  #block-views-block-icom-latest-uploads-block-4 .views-field-field-source-mp3 a {
+
+    font-size: 1.5em;
+    height: 32px;
+
+  }
+
+
+
+  #playinfo {
+    min-height: 30px;
+
+  }
+
+}
+
+
+/* animation */
+.menu.menu--main.nav.navbar-nav>li.first>a,
+.event1 .content a {
+  animation-name: ingredients;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ingredients {
+  0% {
+    color: #fff
+  }
+
+  66% {
+    color: #000000
+  }
+
+  100% {
+    color: #00ff00
+  }
+}
+
+
+
+
+
+
+
+.user-not-logged-in .menu.menu--account.nav.navbar-nav.navbar-right>li.first a {
+  animation-name: login1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes login1 {
+  0% {
+    border-color: #00ff00
+  }
+
+  66% {
+    color: #000000
+  }
+
+  100% {
+    color: #00ff00
+  }
+}
+
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .8) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+  overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+  display: block;
+}
+
+
+.view-display-id-block_6 .img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+.views-field-field-source-img-1 img {
+  width: 100%;
+}
+
+.alert-danger {
+  color: #fff;
+  background-color: #ff0000;
+  border-color: #00ff00;
+}
+
+.alert-danger a, .alert-danger a:hover, .alert-danger a:focus {
+  color: #00ff00;
+}
+
+.js-text-full.text-full.help-block.description{
+  display: none;
+}
+
+
+#block-views-block-icom-upload-info-block-1 .views-field.views-field-title{
+  text-align: center;
+}
+#block-views-block-icom-upload-info-block-1 .views-field.views-field-title h4{
+ font-size: 24px;
+}

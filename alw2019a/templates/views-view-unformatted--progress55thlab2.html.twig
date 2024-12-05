@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% for row in rows %}
+  <h1>{{ row.content['#row']._entity.field_class_name[0].value }}</h1>
+  <h2 class="pgoal1">Help us reach our class participation goal of <u>{{row.content['#row']._entity.field_goal[0].value}} donors</u>.</h2>
+  <h2>{{(row.content['#row']._entity.field_progress[0].value / row.content['#row']._entity.field_goal[0].value * 100)|round}}% to goal ({{row.content['#row']._entity.field_progress[0].value}}&nbsp;of&nbsp;{{row.content['#row']._entity.field_goal[0].value}})</h2>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{row.content['#row']._entity.field_progress[0].value / row.content['#row']._entity.field_goal[0].value * 100}}" aria-valuemin="20" aria-valuemax="100" style="width: {{row.content['#row']._entity.field_progress[0].value / row.content['#row']._entity.field_goal[0].value * 100}}%;">
+    </div>
+  </div>
+{% endfor %}
